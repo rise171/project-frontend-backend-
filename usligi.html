@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cайт разработки</title>
+    <link rel="icon" href="favicon.ico" type="ico">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <header>
+        <figure>
+          <img src="logo1.jpg">
+          <figcaption>Лого</figcaption>
+        </figure>
+        <div class="info-group">
+            <p>Группа ЭФБО-06-23</p>
+            <p>Петрова Кристина Александровна</p>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Сайт</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Главная
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="index.html">Фронтенд</a></li>
+                  <li><a class="dropdown-item" href="first_sem.html">Бэкенд</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="usligi.html">Фулстек</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="first_sem.html">Первый семестр</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Второй семестр</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="usligi.html">Услуги</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link disabled">Авторизация</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
+              <button class="btn btn-outline-success" type="submit">Поиск</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="site-content">
+            <h1> Разработка веб-приложений <br> </h1>
+            <div class="system-card">
+                <div class="card" style="width: 18rem;">
+                    <img src="1.jpg" class="card-img-top" alt="Визитка">
+                    <div class="card-body">
+                    <h5 class="card-title">Сайт-визитка</h5>
+                    <p class="card-text">Мы разработаем стильный и информативный сайт-визитку, который эффективно представит вашу компанию и привлечет новых клиентов.</p>
+                    <button type="button" class="btn btn-primary" id="openModal">Заказать</button>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="2.jpg" class="card-img-top" alt="Магазин">
+                    <div class="card-body">
+                    <h5 class="card-title">Интернет-магазин</h5>
+                    <p class="card-text">Разрабатываем современный интернет-магазин с интуитивно понятным интерфейсом и мощными функциями, который обеспечит удобный шопинг и увеличит ваши продажи.</p>
+                    <button type="button" class="btn btn-primary" id="openModal">Заказать</button>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="1.jpg" class="card-img-top" alt="Магазин">
+                    <div class="card-body">
+                    <h5 class="card-title">Корпоративный сайт</h5>
+                    <p class="card-text">Создаем функциональный корпоративный сайт, который подчеркнет вашу уникальность, повысит доверие клиентов и упростит взаимодействие с партнерами.</p>
+                    <button type="button" class="btn btn-primary" id="openModal">Заказать</button>
+                    </div>
+                </div>
+            </div>
+
+            <p class="text-p"> Веб-разработчик создаёт сайты и веб-приложения. Его основная задача — разрабатывать, поддерживать и развивать клиентскую часть web-страниц — то, что видят пользователи, и серверную — ту, которая доступна только разработчикам. Web-разработчики используют различные языки программирования, например JavaScript, PHP, Python и Ruby, для создания, доработки сайтов и баз данных для хранения информации. Они также занимаются настройкой сервера и оптимизацией сайта.<br></p>
+            <p class="text-p"> Веб-разработка включает в себя множество аспектов, таких как веб-дизайн, веб-программирование, управление базами данных и многое другое. </p>
+            
+            <h5>Услуги</h5>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Сайт-визитка
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Мы предлагаем создание стильного и информативного сайта-визитки, который станет вашим мощным инструментом для онлайн-презентации. Включает в себя уникальный дизайн, адаптивную верстку для мобильных устройств и простую навигацию, что позволит вашим клиентам легко находить нужную информацию. Мы также обеспечим интеграцию с социальными сетями и контактными формами, чтобы вы могли легко взаимодействовать с потенциальными клиентами и увеличивать свою клиентскую базу.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Интернет-магазин
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Мы создаем современные интернет-магазины, которые предлагают интуитивно понятный интерфейс и мощные функциональные возможности для удобного шопинга. Включает в себя интеграцию с системами оплаты и доставки, управление товарами и заказами, а также возможность настройки акций и скидок. Наши решения также обеспечивают адаптивность для мобильных устройств, что позволяет вашим клиентам делать покупки с любого устройства. Мы также предлагаем поддержку и обучение по использованию платформы, чтобы вы могли максимально эффективно управлять своим интернет-магазином и увеличивать продажи.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Корпоративный сайт
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Наши услуги по созданию корпоративного сайта направлены на то, чтобы подчеркнуть уникальность вашей компании и её ценности. Мы разработаем функциональный и современный сайт, который будет включать разделы для представления вашей команды, услуг, новостей и проектов. Мы также внедрим инструменты для обратной связи, такие как формы для запросов и подписки на рассылку. Благодаря SEO-оптимизации ваш сайт будет легче находить в поисковых системах, что поможет привлечь больше клиентов и партнеров.
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
+        </div>
+    </main>
+
+    <form id="modal" class="modal-window">
+        <div class="modal-window-content">
+            <span id="close" class="close">x</span>
+            <h3>Разработка веб-приложений</h3>
+            <p>Заполните форму и мы обязательно свяжемся в ближйшее время</p>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Например, Иванов Иван Иванович" name="name">
+                <label for="floatingInput">Как вас зовут</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="test@mail.ru" name="email">
+                <label for="floatingInput">Ваш e-mail</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="floatingInput" placeholder="+7 999 999 99 99" name="phone">
+                <label for="floatingInput">Ваш телефон</label>
+            </div>
+            <select class="form-select" aria-label="Страна">
+                <option selected>Россия</option>
+                <option value="1">Китай</option>
+                <option value="2">Англия</option>
+                <option value="3">Каир</option>
+                <option value="4">Канада</option>
+            </select>
+            <div class="form-group">
+                <label for="inputDate">Введите дату:</label>
+                <input type="datetime" class="form-control" name="data">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Комметарий</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="comment"></textarea>
+            </div>
+            <div class="input-group mb-3">
+                <input type="file" class="form-control" id="inputGroupFile02">
+                <label class="input-group-text" for="inputGroupFile02">Загрузка</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Согласен на обработку моих персональных данных
+                </label>
+            </div>
+            <input class="btn btn-primary" type="submit" value="Отправить">
+           
+        </div>
+    </form>
+
+    <script>
+        // Получаем элементы модального окна и кнопок
+        const modal = document.getElementById("modal");
+        const btn = document.getElementById("openModal");
+        const span = document.getElementsByClassName("close")[0];
+        const form = document.getElementById("contactForm");
+        const successMessage = document.getElementById("successMessage");
+        // Открываем модальное окно при нажатии на кнопку
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+        // Закрываем модальное окно при нажатии на "X"
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+        // Закрываем модальное окно при клике вне его области
+        window.onclick = function(event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <footer> 
+        <p>Петрова Кристина Александровна, 2024</p>
+    </footer>
+
+    <script src="form.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>

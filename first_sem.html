@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cайт разработки</title>
+    <link rel="icon" href="favicon.ico" type="ico">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+
+<header>
+    <figure>
+        <img src="logo1.jpg">
+        <figcaption>Лого</figcaption>
+    </figure>
+    <div class="info-group">
+        <p>Группа ЭФБО-06-23</p>
+        <p>Петрова Кристина Александровна</p>
+    </div>
+</header>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Сайт</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Главная
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="index.html">Фронтенд</a></li>
+                        <li><a class="dropdown-item" href="first_sem.html">Бэкенд</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="usligi.html">Фулстек</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="first_sem.html">Первый семестр</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="second_sem.html">Второй семестр</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="usligi.html">Услуги</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#authModal">Авторизация</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
+                <button class="btn btn-outline-success" type="submit">Поиск</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<main>
+    <div class="site-content">
+        <h1> Первый семестр </h1>
+        <div class="container">
+            <p> Лекции </p>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Тема</th>
+                        <th>Посещение</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td> Основы языка HTML </td>
+                        <td><input type="checkbox" name="select"></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td> Углубленное изучение HTML </td>
+                        <td><input type="checkbox" name="select"></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td> Основы работы с CSS </td>
+                        <td><input type="checkbox" name="select"></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td> Адаптивная вёрстка Flexbox и Grid Layout </td>
+                        <td><input type="checkbox" name="select"></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td> Bootstrop - работа с фреймворком </td>
+                        <td><input type="checkbox" name="select"></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td> Основы языка JavaScript </td>
+                        <td><input type="checkbox" name="select"></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td> Работа с DOM и событиями в JavaScript </td>
+                        <td><input type="checkbox" name="select"></td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td> Введение в GitHub и GitHub Pages </td>
+                        <td><input type="checkbox" name="select"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p> Практики </p>
+        <div class="practice-table">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Номер</th>
+                        <th>Тема</th>
+                        <th>Посещение</th>
+                        <th>Выполнение</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td> Основы языка HTML </td>
+                        <td><input type="checkbox" name="select"></td>
+                        <td><input type="checkbox" name="select"></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td> Формы и кнопки HTML </td>
+                        <td><input type="checkbox" name="select"></td>
+                        <td><input type="checkbox" name="select"></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td> Таблицы и интерактивные элементы HTML </td>
+                        <td><input type="checkbox" name="select"></td>
+                        <td><input type="checkbox" name="select"></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td> Основы работы с CSS </td>
+                        <td><input type="checkbox" name="select"></td>
+                        <td><input type="checkbox" name="select"></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td> Работа с классами в CSS </td>
+                        <td><input type="checkbox" name="select"></td>
+                        <td><input type="checkbox" name="select"></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td> Работа с сетками и разметкой в HTML </td>
+                        <td><input type="checkbox" name="select"></td>
+                        <td><input type="checkbox" name="select"></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td> Адаптивная вёрстка </td>
+                        <td><input type="checkbox" name="select"></td>
+                        <td><input type="checkbox" name="select"></td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td> Bootstrop </td>
+                        <td><input type="checkbox" name="select"></td>
+                        <td><input type="checkbox" name="select"></td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td> Bootstrop </td>
+                        <td><input type="checkbox" name="select"></td>
+                        <td><input type="checkbox" name="select"></td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td> Основы языка JavaScript </td>
+                        <td><input type="checkbox" name="select"></td>
+                        <td><input type="checkbox" name="select"></td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td> Базовые задачи на JS </td>
+                        <td><input type="checkbox" name="select"></td>
+                        <td><input type="checkbox" name="select"></td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td> DOM-структура приложений и работа с объектами в языке JS </td>
+                        <td><input type="checkbox" name="select"></td>
+                        <td><input type="checkbox" name="select"></td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td> Встраивание скриптов </td>
+                        <td><input type="checkbox" name="select"></td>
+                        <td><input type="checkbox" name="select"></td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td> Отладка сценариев </td>
+                        <td><input type="checkbox" name="select"></td>
+                        <td><input type="checkbox" name="select"></td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td> Анимация и работа с ними </td>
+                        <td><input type="checkbox" name="select"></td>
+                        <td><input type="checkbox" name="select"></td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td> GitHub </td>
+                        <td><input type="checkbox" name="select"></td>
+                        <td><input type="checkbox" name="select"></td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td> Защита проекта </td>
+                        <td><input type="checkbox" name="select"></td>
+                        <td><input type="checkbox" name="select"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div><br>
+        <p> Занятия проходят по адресу: г. Москва, проспект Вернадского, д. 78</p>
+        <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/org/mirea_rossiyskiy_tekhnologicheskiy_universitet/1084832794/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">МИРЭА, Российский технологический университет</a><a href="https://yandex.ru/maps/213/moscow/category/university/184106140/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">ВУЗ в Москве</a><iframe src="https://yandex.ru/map-widget/v1/?ll=37.481481%2C55.672316&mode=search&oid=1084832794&ol=biz&z=16.65" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+        <p> Рабочая программа </p>
+        <embed src="c:\Users\krisp\Downloads\ПР_8_Bootstrap.pdf" type="application/pdf">
+    </div>
+</main>
+
+<!-- Модальное окно для авторизации -->
+<div class="modal fade" id="authModal" tabindex="-1" aria-labelledby="authModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="authModalLabel">Авторизация / Регистрация</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+                <ul class="nav nav-tabs" id="authTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="login-tab" data-bs-toggle="tab" href="#login" role="tab" aria-controls="login" aria-selected="true">Авторизация</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="register-tab" data-bs-toggle="tab" href="#register" role="tab" aria-controls="register" aria-selected="false">Регистрация</a>
+                    </li>
+                </ul>
+                <div class="tab-content mt-3" id="authTabContent">
+                    <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+                        <form id="loginForm">
+                            <div class="mb-3">
+                                <label for="loginEmail" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="loginEmail" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="loginPassword" class="form-label">Пароль</label>
+                                <input type="password" class="form-control" id="loginPassword" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Войти</button>
+                        </form>
+                    </div>
+                    <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="register-tab">
+                        <form id="registerForm">
+                            <div class="mb-3">
+                                <label for="registerEmail" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="registerEmail" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="registerPassword" class="form-label">Пароль</label>
+                                <input type="password" class="form-control" id="registerPassword" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer> 
+    <p>Петрова Кристина Александровна, 2024</p>
+</footer>
+
+<script src="script.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

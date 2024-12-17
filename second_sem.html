@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cайт разработки</title>
+    <link rel="icon" href="favicon.ico" type="ico">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+
+<header>
+    <figure>
+        <img src="logo1.jpg" alt="Лого" class="img-fluid">
+        <figcaption>Лого</figcaption>
+    </figure>
+    <div class="info-group">
+        <p>Группа ЭФБО-06-23</p>
+        <p>Петрова Кристина Александровна</p>
+    </div>
+</header>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Сайт</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Главная
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="index.html">Фронтенд</a></li>
+                        <li><a class="dropdown-item" href="first_sem.html">Бэкенд</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="usligi.html">Фулстек</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="first_sem.html">Первый семестр</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="second_sem.html">Второй семестр</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="usligi.html">Услуги</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled">Авторизация</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
+                <button class="btn btn-outline-success" type="submit">Поиск</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<main class="container mt-4">
+    <section id="overview">
+        <h2>Обзор курса</h2>
+        <p>Во втором семестре мы углубимся в бэкенд-разработку, изучая различные технологии и подходы к созданию серверной логики, работы с базами данных и API.</p>
+    </section>
+
+    <section id="modules" class="mt-4">
+        <h2>Модули курса</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Модуль 1</h5>
+                        <p class="card-text">Основы серверного программирования</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Модуль 2</h5>
+                        <p class="card-text">Работа с базами данных (SQL и NoSQL)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Модуль 3</h5>
+                        <p class="card-text">Создание RESTful API</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="mt-4">
+        <h2>Проекты</h2>
+        <p>В рамках курса студенты будут работать над следующими проектами:</p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Название проекта</th>
+                    <th>Описание</th>
+                    <th>Срок выполнения</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-bs-toggle="modal" data-bs-target="#projectModal1">
+                    <td>Приложение для заметок</td>
+                    <td>Создание сервиса для хранения и управления заметками.</td>
+                    <td>4 недели</td>
+                </tr>
+                <tr data-bs-toggle="modal" data-bs-target="#projectModal2">
+                    <td>Система управления задачами</td>
+                    <td>Разработка API для управления задачами в команде.</td>
+                    <td>6 недель</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="resources" class="mt-4">
+        <h2>Ресурсы</h2>
+        <p>Рекомендуемые материалы для изучения:</p>
+        <div id="resourceCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="nodejs.jpg" class="d-block w-100" alt="Node.js">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Node.js</h5>
+                        <p>Популярная платформа для разработки серверных приложений на JavaScript.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="mongodb.jpg" class="d-block w-100" alt="MongoDB">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>MongoDB</h5>
+                        <p>Документо-ориентированная NoSQL база данных для хранения данных.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="rest_api.jpg" class="d-block w-100" alt="RESTful API">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>RESTful API</h5>
+                        <p>Архитектурный стиль для создания веб-сервисов, взаимодействующих через HTTP.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#resourceCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Предыдущий</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#resourceCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Следующий</span>
+            </button>
+        </div>
+    </section>
+
+    <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModalLabel1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel1">Приложение для заметок</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Создание сервиса для хранения и управления заметками. Студенты научатся работать с CRUD-операциями и базами данных.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="projectModal2" tabindex="-1" aria-labelledby="projectModalLabel2" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel2">Система управления задачами</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Разработка API для управления задачами в команде. Студенты будут изучать аутентификацию и авторизацию пользователей.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="mt-4 text-center"> 
+    <p>Петрова Кристина Александровна, 2024</p>
+</footer>
+
+<script src="script.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

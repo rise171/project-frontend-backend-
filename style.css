@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
+}
+h3 {
+    padding-left: 10px;
+}
+header {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: repeat(2, max-content);
+    grid-template-rows: max-content;
+    padding-right: 15px;
+    background: linear-gradient(rgb(255, 154, 255), rgb(253, 191, 253), rgb(255, 255, 255));
+}
+figure {
+    display: flex;
+    flex-direction: column;
+}
+figcaption {
+    font-size: 14px;
+    margin-left: 35px;
+    font-family: 'Times New Roman', Times, serif;
+}
+figure img {
+    width: 60px;
+    height: 60px;
+    border-radius: 25%;
+    margin: 10px 20px;
+}
+.info-group p {
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.side-nav {
+    display: grid;
+    grid-template-columns: minmax(5rem, 30%) 1fr;
+    padding-right: 5%;
+    border: 1px solid #683f64;
+    border-bottom: 0;
+    border-top: 0;
+}
+.title-sidenav {
+    padding-left: 15px;
+    padding-top: 10px;
+}
+.main-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.site-content {
+    padding: 2% 5%;
+    width: 100%;
+}
+.video-index {
+    width: 340px; 
+    height: 210px;
+
+}
+.grid-section {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3, 350px);
+    grid-template-rows: repeat(2, 370px);
+}
+.grid-section p {
+    padding: 10px;
+    font-size: medium;
+}
+.karta {
+    width: 100%;
+    height: 250px;
+}
+main {
+    display: flex;
+    flex-direction: row;
+}
+video {
+    height: 210px;
+    max-width: 100%;
+    object-position: center;
+}
+footer {
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    background-color: white;
+    font-size: 14px;
+    border-top: 1px solid #683f64;
+}
+.system-card {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    justify-content: space-evenly;
+    margin: 10px;
+    grid-template-columns: repeat(3, 19rem);
+    grid-template-rows: 450px;
+}
+.modal-window {
+    display: none; /* Скрываем модальное окно по умолчанию */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0); /* Черный фон */
+    background-color: rgba(0,0,0,0.4); /* Полупрозрачный фон */
+   }
+.modal-window-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* Центрируем модальное окно */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%; /* Ширина модального окна */
+   }
+.close {
+    color: #aaa; /* Цвет кнопки закрытия */
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+   }
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.text-p {
+    font-size: 16px;
+
+}
+embed {
+    width: 600px;
+    height: 400px;
+}
+
+@media (width <= 768px) {
+    .main-content {
+        align-items: center;
+    }
+    .main-content p {
+        padding: 7px;
+    }
+    .main-content img {
+        padding: 5px;
+    }
+    .site-content {
+        width: auto;
+        overflow: hidden;
+    }
+    .system-card {
+        overflow-x: scroll;
+        gap: 10px;
+    }
+    .grid-section {
+        grid-template-columns: repeat(3, 250px);
+        grid-template-rows: repeat(2, max-content); 
+        gap: 10px;
+        overflow-x: scroll;
+    }
+    .video-index {
+        width: 250px;
+    }
+    embed {
+        width: 250px;
+        height: 300px;
+    }
+    .practice-table {
+        display: block;
+        overflow-x: scroll;
+    }
+    
+}
+
+.container {
+    display: block;
+}
+
+@media (769px <= width <= 1024px) {
+    .info-group p {
+        font-size: 19px;
+    }
+    figure {
+        align-items: center;
+    }
+    figcaption {
+        font-size: 19px;
+        margin-left: 0px;
+    }
+    .site-content {
+        width: auto;
+        overflow: hidden;
+    }
+    .site-content p {
+        font-size: 22px;
+    }
+    .system-card {
+        overflow-y: hidden;
+        overflow-x: scroll;
+        gap: 10px;
+        grid-template-rows: 600px;
+    }
+    .grid-section {
+        margin: 15px 1px;
+        grid-template-columns: repeat(3, 350px);
+        grid-template-rows: repeat(2, max-content); 
+        gap: 10px;
+        overflow-x: scroll;
+    }
+    .main-content {
+        align-items: center;
+    }
+    .main-content p {
+        padding: 7px;
+    }
+    embed {
+        width: 500px;
+    }
+    footer p {
+        font-size: 19px;
+    }
+    .title-sidenav {
+        font-size: 19px;
+    }
+    .side-nav ul {
+        font-size: 19px;
+    }
+}
